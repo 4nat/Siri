@@ -43,7 +43,7 @@ Client.on("guildMemberAdd", function(member) {
 })
 
 Client.on("message", message => {
-       if(message.content.startsWith(Config.Prefix) || message.content.startsWith("Siri"))
+       if(message.content.startsWith(Config.Prefix) || message.content.startsWith("Siri "))
     {
 let args = message.content.slice(Config.Prefix.length).split(' ');
     let command = args.shift().toLowerCase();
