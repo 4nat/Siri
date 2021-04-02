@@ -43,7 +43,9 @@ Client.on("guildMemberAdd", function(member) {
 })
 
 Client.on("message", message => {
-    let args = message.content.slice(Config.Prefix.length).split(' ');
+       if(message.content.startsWith(Config.Prefix))
+    {
+let args = message.content.slice(Config.Prefix.length).split(' ');
     let command = args.shift().toLowerCase();
     const argErrorEmbed = new Discord.MessageEmbed()
     .setTitle("» Exception!")
@@ -209,5 +211,7 @@ Client.on("message", message => {
             }
             break;
     }
+    }
+    
 })
 Client.login(Config.Token)
