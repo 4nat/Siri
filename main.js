@@ -70,6 +70,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                     message.channel.send(embed)
                 })  
             }
+            break;
         case "tickle":
             if(args[0] == null)
             {
