@@ -64,7 +64,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 Neko.sfw.cuddle().then(function(cuddle){
                     let embed = new Discord.MessageEmbed()
                     .setTitle("ヾ(•ω•`)o")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) cuddled [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) cuddled [" + args[0] + "](https://syndi.tk).**")
                     .setImage(cuddle["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
@@ -81,7 +81,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 Neko.sfw.tickle().then(function(tickle){
                     let embed = new Discord.MessageEmbed()
                     .setTitle("(o゜▽゜)o☆")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) tickled [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) tickled [" + args[0] + "](https://syndi.tk).**")
                     .setImage(tickle["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
@@ -99,7 +99,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 {
                     let embed = new Discord.MessageEmbed()
                     .setTitle("o(*°▽°*)o")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) patted [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) patted [" + args[0] + "](https://syndi.tk).**")
                     .setImage(pat["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
@@ -120,7 +120,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                     Neko.nsfw.anal().then(function(anal) {
                         let embed = new Discord.MessageEmbed()
                         .setTitle("(*￣3￣)╭")
-                        .setDescription("**[" + message.author.username + "](https://syndi.tk) is doing lewd things with [" + args[0] + "](https://syndi.tk)**")
+                        .setDescription("**[" + message.author.username + "](https://syndi.tk) does lewd things with [" + args[0] + "](https://syndi.tk).**")
                         .setImage(anal["url"])
                         .setColor("81b0db")
                         message.channel.send(embed)
@@ -146,7 +146,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 Neko.sfw.hug().then(function(hug) {
                     let embed = new Discord.MessageEmbed()
                     .setTitle("ヾ(•ω•`)o")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) hugged [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) hugged [" + args[0] + "](https://syndi.tk).**")
                     .setImage(hug["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
@@ -163,7 +163,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 Neko.sfw.kiss().then(function(kiss) {
                     let embed = new Discord.MessageEmbed()
                     .setTitle("(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) kissed [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) kissed [" + args[0] + "](https://syndi.tk).**")
                     .setImage(kiss["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
@@ -181,7 +181,7 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
                 Neko.sfw.slap().then(function(slap) {
                     let embed = new Discord.MessageEmbed()
                     .setTitle("(づ￣ 3￣)づ")
-                    .setDescription("**[" + message.author.username + "](https://syndi.tk) slapped [" + args[0] + "](https://syndi.tk)**")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) slapped [" + args[0] + "](https://syndi.tk).**")
                     .setImage(slap["url"])
                     .setColor("81b0db")
                     message.channel.send(embed)
