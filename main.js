@@ -54,6 +54,39 @@ let args = message.content.slice(Config.Prefix.length).split(' ');
 
     switch(command)
     {
+        case "cuddle":
+            if(args[0] == null)
+            {
+                message.channel.send(argErrorEmbed)
+            }
+            else
+            {
+                Neko.sfw.cuddle().then(function(cuddle){
+                    let embed = new Discord.MessageEmbed()
+                    .setTitle("ヾ(•ω•`)o")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) cuddled [" + args[0] + "](https://syndi.tk)**")
+                    .setImage(cuddle["url"])
+                    .setColor("81b0db")
+                    message.channel.send(embed)
+                })  
+            }
+        case "tickle":
+            if(args[0] == null)
+            {
+                message.channel.send(argErrorEmbed)
+            }
+            else
+            {
+                Neko.sfw.tickle().then(function(tickle){
+                    let embed = new Discord.MessageEmbed()
+                    .setTitle("(o゜▽゜)o☆")
+                    .setDescription("**[" + message.author.username + "](https://syndi.tk) tickled [" + args[0] + "](https://syndi.tk)**")
+                    .setImage(tickle["url"])
+                    .setColor("81b0db")
+                    message.channel.send(embed)
+                })
+            }
+            break;
         case "pat":
             if(args[0] == null)
             {
